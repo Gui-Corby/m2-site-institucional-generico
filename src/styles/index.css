@@ -1,9 +1,14 @@
+* {
+    box-sizing: border-box;
+}
 
 header {
     background-color: var(--gray-1);
-    max-width: 100%;
+    width: 100%;
     border-bottom: 2px solid var(--brand-1);
     height: 6.5rem;
+    position: fixed;
+    z-index: 1;
 }
 
 .header__flex-container {
@@ -20,6 +25,7 @@ header button {
     color: white;
     background-color: var(--gray-1);
     padding: 10px 22px 10px 22px;
+    cursor: pointer;
 }
 
 .banner {
@@ -106,14 +112,16 @@ header button {
 .faq__flex-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 12rem;
 }
+
 
 .faq__left-side {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: sticky;
+    top: 12rem;
 }
 
 .faq__right-side {
@@ -134,6 +142,7 @@ header button {
 
 .faq__button {
     width: 50%;
+    cursor: pointer;
 }
 
 .faq__paragraph {
@@ -203,6 +212,8 @@ header button {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 12rem;
 }
 
 .comments__title-box-blue {
@@ -229,4 +240,84 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+dialog {
+    padding: 0;
+    width: 480px;
+    height: 350px;
+    border: 2px solid var(--brand-1);
+    background-color: var(--gray-2);
+    overflow: hidden;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__container {
+    width: 480px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 1rem;
+    position: absolute;
+}
+
+.modal__title {
+    font-weight: var(--title-weight);
+    font-size: var(--title3-size);
+    line-height: 50px;
+    color: var(--gray-7);
+    margin-top: 20px;
+}
+
+.modal__close {
+    position: relative;
+    left: 401px;
+    top: -43px;
+    color: var(--gray-4);
+    background-color: var(--gray-3);
+    width: 30px;
+    height: 28px;
+    padding: 6px 10px 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal__paragraph {
+    font-weight: var(--main-text-weight);
+    font-size: var(--text3-size);
+    color: var(--gray-4);
+    margin-bottom: 30px;
+}
+
+.modal__container input {
+    font-weight: var(--main-text-weight);
+    font-size: var(--text1-size);
+    line-height: 30px;
+    color: var(--gray-4);
+    background-color: var(--gray-1);
+    padding: 14px 20px 14px 20px;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 90%;
+    border: none;
+
+}
+
+.modal__container button {
+    font-weight: var(--title-weight);
+    font-size: var(--text3-size);
+    line-height: 24px;
+    color: var(--gray-7);
+    background-color: var(--brand-1);
+    padding: 0px 32px 0px 32px;
+    margin-bottom: 1.5rem;
+    height: 50px;
+    width: 90%;
+    border: none;
 }
