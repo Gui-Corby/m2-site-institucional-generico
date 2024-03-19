@@ -257,8 +257,8 @@ dialog::backdrop {
 }
 
 .modal__container {
-    width: 480px;
-    height: 350px;
+    width: 30rem;
+    height: 21.875rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -270,21 +270,21 @@ dialog::backdrop {
 .modal__title {
     font-weight: var(--title-weight);
     font-size: var(--title3-size);
-    line-height: 50px;
+    line-height: 3.125rem;
     color: var(--gray-7);
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .modal__close {
     position: relative;
-    left: 401px;
-    top: -43px;
+    left: 25.0625rem;
+    top: -2.6875rem;
     color: var(--gray-4);
     background-color: var(--gray-3);
-    width: 30px;
-    height: 28px;
-    padding: 6px 10px 6px 10px;
-    border-radius: 4px;
+    width: 1.875rem;
+    height: 1.75rem;
+    padding: .375rem .625rem .375rem .625rem;
+    border-radius: .25rem;
     cursor: pointer;
 }
 
@@ -292,18 +292,18 @@ dialog::backdrop {
     font-weight: var(--main-text-weight);
     font-size: var(--text3-size);
     color: var(--gray-4);
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .modal__container input {
     font-weight: var(--main-text-weight);
     font-size: var(--text1-size);
-    line-height: 30px;
+    line-height: 1.875rem;
     color: var(--gray-4);
     background-color: var(--gray-1);
-    padding: 14px 20px 14px 20px;
-    margin-bottom: 30px;
-    height: 50px;
+    padding: .875rem 1.25rem .875rem 1.25rem;
+    margin-bottom: 1.875rem;
+    height: 3.125rem;
     width: 90%;
     border: none;
 
@@ -315,9 +315,9 @@ dialog::backdrop {
     line-height: 24px;
     color: var(--gray-7);
     background-color: var(--brand-1);
-    padding: 0px 32px 0px 32px;
+    padding: 0rem 2rem 0rem 2rem;
     margin-bottom: 1.5rem;
-    height: 50px;
+    height: 3.125rem;
     width: 90%;
     border: none;
 }
