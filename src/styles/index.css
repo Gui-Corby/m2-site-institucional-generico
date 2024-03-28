@@ -496,6 +496,10 @@ dialog::backdrop {
         padding-top: 0;
     }
 
+    .modal__close {
+        left: 25.0625rem;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -555,6 +559,14 @@ dialog::backdrop {
     } 
     .comments__list-item {
         padding-inline: 1rem;
+    }
+
+    .modal__close {
+        left: 22.0625rem;
+    }
+
+    .modal__paragraph {
+        width: 90%;
     }
 
 }
